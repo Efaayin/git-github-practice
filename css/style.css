@@ -1,0 +1,101 @@
+.container {
+    width: 400px;
+    background-color: #ddd;
+    margin: 2.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "result result result result"
+    "clear clear backspace divide"
+    "seven eight nine times"
+    "four five six minus"
+    "one two three add"
+    "zero zero zero equals"
+    ;
+}
+
+.num, .function {
+    padding: 1.875rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 1px solid black;
+}
+
+.function {
+    color: white;
+    background-color: rgb(223, 151, 19);
+}
+
+button {
+    background-color: #ddd;
+}
+
+button:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+button:active {
+    color: black;
+    background-color: #d0d0d0;
+}
+
+.result {
+    grid-area: result;
+    text-align: right;
+    color: white;
+    background-color: black;
+}
+.clear {
+    grid-area: clear;
+}
+.backspace {
+    grid-area: backspace;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.zero {
+    grid-area: zero;
+}
+.divide {
+    grid-area: divide;
+}
+.times {
+    grid-area: times;
+}
+.add {
+    grid-area: add;
+}
+.minus {
+    grid-area: minus;
+}
+.equals {
+    grid-area: equals;
+}
